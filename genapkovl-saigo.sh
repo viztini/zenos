@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-HOSTNAME="saigo"
+HOSTNAME="zenos"
 
 cleanup() {
 	rm -rf "$tmp"
@@ -63,6 +63,7 @@ agetty
 picom
 flatpak
 EOF
+git
 
 makefile root:root 0755 "$tmp"/etc/inittab <<EOF
 # /etc/inittab
@@ -104,7 +105,7 @@ iface eth0 inet dhcp
 "
 
 KEYMAPOPTS="us us"
-HOSTNAMEOPTS="-n saigo"
+HOSTNAMEOPTS="-n zenos"
 DNSOPTS="8.8.8.8"
 TIMEZONEOPTS="-z UTC"
 PROXYOPTS="none"
@@ -129,7 +130,7 @@ cp /etc/.profile /root/
 EOF
 
 makefile root:root 0644 "$tmp"/etc/motd <<EOF
-Welcome to SaigOS!
+Welcome to ZenOS!
 EOF
 
 rc_add devfs sysinit
