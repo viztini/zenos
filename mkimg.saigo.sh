@@ -1,6 +1,6 @@
 profile_saigo() {
 	profile_standard
-	profile_abbrev="saigo"
+	profile_abbrev="zenos"
 	title="Extended"
 	desc="Most common used packages included.
 		Suitable for routers and servers.
