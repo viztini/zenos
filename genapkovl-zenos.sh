@@ -63,7 +63,7 @@ agetty
 picom
 flatpak
 EOF
-git
+
 
 makefile root:root 0755 "$tmp"/etc/inittab <<EOF
 # /etc/inittab
