@@ -2,4 +2,4 @@
 
 ## The art of effortless computing
 
-[./wallpaper.png]
+(wallpaper)[./wallpaper.png]
